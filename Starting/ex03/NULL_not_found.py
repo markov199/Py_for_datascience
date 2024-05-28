@@ -10,3 +10,5 @@ def NULL_not_found(object: any) -> int:
         return 1       
 
     return 0
+
+""" https://realpython.com/null-in-python/
