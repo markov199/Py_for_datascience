@@ -3,6 +3,7 @@ import time
 import os
 
 def ft_tqdm(lst: range):
+    """ a doc"""
     total = len(lst)
     progress = 0
     for x in lst:
@@ -11,7 +12,7 @@ def ft_tqdm(lst: range):
         # calcutale bar length using terminal size
         total_bar = int(2 / 3 * os.get_terminal_size().columns)
         progress_bar = int(percent * total_bar / 100)
-        print(f"{int(percent)}%|{"=" * (progress_bar- 1)}>{"-" * (total_bar - progress_bar)}|{ progress}/{total}", end="\r")
+        print(f"{int(percent)}%|[{"=" * (progress_bar- 1)}>{"-" * (total_bar - progress_bar)}]|{ progress}/{total}", end="\r")
         yield (x)
 
 """ ref

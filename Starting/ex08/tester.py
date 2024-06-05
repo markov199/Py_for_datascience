@@ -6,4 +6,3 @@ for elem in ft_tqdm(range(333)):
 print()  # ensures the next print is on the next line
 for elem in tqdm(range(333)):
     sleep(0.005)
-print()
