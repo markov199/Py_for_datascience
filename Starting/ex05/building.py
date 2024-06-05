@@ -1,27 +1,26 @@
 import sys
-from string import whitespace 
 from string import punctuation 
-from string import ascii_lowercase 
-from string import ascii_uppercase
-from string import digits 
 
 def count_text(text: str):
-    i = len(text)
+    chars = len(text)
     upper = 0
     lower = 0
     punct = 0
     spaces = 0
     num	= 0
-    print(f"The text contains {i} characters:")
+    print(f"The text contains {chars} characters:")
     for x in text:
-	    if x in ascii_uppercase:
-		    upper += 1
-		elif x in ascii_lowercase:
-		    lower += 1
-	    elif x in punctuation:
-		    punct += 1
-
-		
+        if x.isupper():
+            upper += 1
+        elif x.islower():
+            lower += 1
+        elif x in punctuation:
+            punct += 1
+        elif x.isspace:
+            spaces += 1
+        elif x.isdigit:
+              num += 1
+    print(f"{upper} upper letters\n{lower} lower letters\n{punct} punctuation marks\n{spaces} spaces\n{num} digits")		
     
 def main():
 	try:
