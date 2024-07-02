@@ -5,3 +5,8 @@ def load(path: str):
     print (f"Loading dataset of dimensions {df.shape}")
     return df
    
+
+"""ref
+creating dataframes:
+https://www.geeksforgeeks.org/different-ways-to-create-pandas-dataframe/
+ """
