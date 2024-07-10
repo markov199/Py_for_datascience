@@ -6,11 +6,11 @@ def NULL_not_found(object: any) -> int:
         print(f"Nothing: {object} {x}")
     elif x is float:
         if object != object:
-            print(f"Cheese {object} {x}")
+            print(f"Cheese: {object} {x}")
     elif x is int and object is 0:
-            print(f"zero {object} {x}")
+            print(f"Zero: {object} {x}")
     elif x is str and object is '':
-            print(f"Empty {object} {x}")
+            print(f"Empty: {object} {x}")
     elif x is bool and object is False:
             print(f"Fake: {object} {x}")
     else:
