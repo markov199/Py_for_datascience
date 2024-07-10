@@ -7,9 +7,9 @@ def NULL_not_found(object: any) -> int:
     elif x is float:
         if object != object:
             print(f"Cheese: {object} {x}")
-    elif x is int and object is 0:
+    elif x is int and object == 0:
             print(f"Zero: {object} {x}")
-    elif x is str and object is '':
+    elif x is str and object == '':
             print(f"Empty: {object} {x}")
     elif x is bool and object is False:
             print(f"Fake: {object} {x}")
